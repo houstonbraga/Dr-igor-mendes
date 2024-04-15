@@ -38,7 +38,7 @@ html{
 header{
     width: 100%;
     height: 550px;
-    background-image: url(img/Banner_web-01.png);
+    background-image: url(img/pexels-andrea-piacquadio-3779697.jpg);
     /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
@@ -131,10 +131,11 @@ header .contenedor_banner{
     font-size: 40px;
     font-weight: 700;
     animation: movedown 1.2s linear 1;
-    animation-delay: 3s;
+    animation-delay: 1s;
     visibility: hidden;
     animation-fill-mode:forwards;
     z-index: 1;
+    color: var(--cinza);
 }
 
 .subtittle_banner{
@@ -142,10 +143,11 @@ header .contenedor_banner{
     font-weight: 300;
     margin-bottom: 3px;
     animation: movedown 1.2s linear 1;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     visibility: hidden;
     animation-fill-mode: forwards;
     z-index: 1;
+    color: var(--cinza);
 }
 
 .cta_banner{
@@ -497,8 +499,8 @@ header .contenedor_banner{
     font-size: 30px;
     margin-bottom: 1px;
     font-weight: 700;
-    color:var(--blanco);
-    text-shadow: -2px 3px 3px var(--azulo)
+    color:var(--marromC);
+    
 
 }
 
@@ -526,7 +528,7 @@ header .contenedor_banner{
 .somos__info-name{
     display: block;
     text-align: center;
-    color: var(--blanco);
+    color: var(--azulo);
 }
 
 .somos__info-title{
@@ -603,7 +605,7 @@ header .contenedor_banner{
     height: auto;
     text-align: center;
     color: var(--blanco);
-    text-shadow: -2px 3px 3px var(--azulc);
+    
 }
 
 /*============ CONTACTANOS-CARDS =============*/
@@ -889,22 +891,25 @@ ul{
     position: fixed;
     right: 1rem;
     bottom: -20%;
-    background-color:var(--azulc);
-    /* opacity: .8; */
-    padding: 0.3rem;
     border-radius: 100%;
+    /* opacity: .8; */
+    
+    
     z-index: 1;
     transition: .4s;
 }
 
-.scroll-up:hover{
-    background-color: var(--azulo);
-}
+
 
 .scroll-up img{
     width: 40px;
     height: 40px;
 }
+
+.scroll-up img:hover {
+    filter: brightness(0);
+}
+
 
 /* Show Scroll */
 .show-scroll{

@@ -135,7 +135,7 @@ header .contenedor_banner{
     visibility: hidden;
     animation-fill-mode:forwards;
     z-index: 1;
-    color: var(--cinza);
+    color: var(--blanco);
 }
 
 .subtittle_banner{
@@ -147,7 +147,7 @@ header .contenedor_banner{
     visibility: hidden;
     animation-fill-mode: forwards;
     z-index: 1;
-    color: var(--cinza);
+    color: var(--blanco);
 }
 
 .cta_banner{
@@ -276,7 +276,7 @@ header .contenedor_banner{
 /*============ SERVICIOS-MODAL =============*/
 .servicios__modal-container{
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden; /*esconder modal*/
     position: fixed;
     background-color:#655a42c4;
     width: 100%;
@@ -301,12 +301,12 @@ header .contenedor_banner{
     justify-content: space-evenly;
     position: relative;
     transition: transform .5s;
-    transform: translateY(0%);
+    transform: translateY(0%); /*aparecer modal*/
     z-index: 3;
 }
 
 .modal-close{
-    transform: translateY(-150%);
+    transform: translateY(-150%); /*esconder modal*/
 }
 
 .close{

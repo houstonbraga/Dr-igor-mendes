@@ -50,7 +50,7 @@ header{
 
 /*============ HEADER-NAV =============*/
 .contenedor{
-    background-color: #655a42c5;
+    background-color: #17181cb4;
     height: 70px;
     width: 100%;
     margin: auto;
@@ -174,11 +174,12 @@ header .contenedor_banner{
     height: 100px;
     width: 100%;
     position: absolute;
+    filter: drop-shadow(0px 2px 10px #9c834c);
 }
 
 /*================================== SERVICIOS ========================================*/
 .servicios{
-    background-color: #655A42;
+    background-color: #17181c;
     position: relative;
     height: 650px;
 }
@@ -270,6 +271,7 @@ header .contenedor_banner{
     width: 100%;
     position: absolute;
     display: flex;
+    
 }
 
 

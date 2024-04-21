@@ -1122,9 +1122,9 @@ ul{
     }
 
     .cards{
-        margin: 30px 30px;
-        width: 70%;
-        max-width: 182px;
+        margin: 30px 15px;
+        width: 97%;
+        max-width: 320px;
         min-width: 180px;
         height: 280px;
         text-align: center;

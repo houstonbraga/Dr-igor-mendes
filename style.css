@@ -9,7 +9,7 @@
     --negro:#000;
     --gris: #17181C;
     --blanco: #fff;
-
+    --ouro: #dba125d2;
     --marrom: #655a42c5;
     --marromC: #D9B581;
     --cinza: #17181C;
@@ -223,17 +223,19 @@ header .contenedor_banner{
 
 .cards{
     margin: 20px 0 ;
-    width: 25%;
-    height: 250px;
+    width: 30%;
+    height: 350px;
     text-align: center;
     padding: 20px;
-    background-color: var(--blanco);
-    box-shadow: -5px 19px 18px 1pxx rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: -5px 19px 18px 1px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: -5px 19px 18px 1px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    box-shadow: -2px 19px 18px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -2px 19px 18px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -2px 19px 18px 1px rgba(0, 0, 0, 0.5);
     border-radius: 1.5rem;
-    color: var(--azulo);
+    border: 1px solid var(--ouro);
+    color: var(--blanco);
     transition: all .5s ease;
+    z-index: 1;
 }
 
 .cards:hover{
@@ -245,12 +247,12 @@ header .contenedor_banner{
 }
 
 .cards:hover .cards__tittle{
-    color: var(--cinza);
+    color: var(--ouro);
 }
 
 .cards img{
-    width: 100px;
-    height: 100px;
+    width: 64px;
+    height: 64px;
     object-fit: cover;
 }
 
@@ -695,7 +697,7 @@ header .contenedor_banner{
     height: 70%;
     max-width: 600px;
     text-align: center;
-    border-radius: 1em;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -703,7 +705,7 @@ header .contenedor_banner{
     transition: transform .5s;
     transform: translateY(0%);
     z-index: 3;
-    border: 6px solid var(--blanco);
+    border: 3px solid var(--blanco);
 }
 
 .modals-close{
@@ -1387,4 +1389,3 @@ ul{
     }
 
 }
-

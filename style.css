@@ -15,6 +15,44 @@
     --cinza: #17181C;
 }
 
+button {
+    --green: #B88923;
+    font-size: 15px;
+    font-family: 'Poppins';
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 1px solid #B88923;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    color: white;
+    box-shadow: inset 0 0 10px white, 0.6, 0 0 9px 3px #B88923;
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, #B8892367 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+  }
+  
+  button:hover:before {
+    transform: translateX(15em);
+  }
+
 
 
 /*============ RESET =============*/
@@ -211,6 +249,11 @@ header .contenedor_banner{
 }
 
 /*============ SERVICIOS-CARDS =============*/
+.icon-star {
+    width: 16px!important;
+    height: 16px!important;
+}
+
 .servicios__cards{
     width: 100%;
     margin: auto;
@@ -261,9 +304,17 @@ header .contenedor_banner{
     font-weight: 700;
 }
 
-.cards__info{
+.cards__info {
     font-size: 15px;
     font-weight: 300;
+    margin-top: 20px;
+}
+
+.cards-info li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
 }
 
 /*============ SERVICIOS-WAVE =============*/
@@ -1114,7 +1165,7 @@ ul{
 
     /*================================ SERVICIOS ====================================*/
     .servicios{
-        height: 1300px;
+        height: 1400px;
     }
 
     .servicios__contenedor{
@@ -1126,7 +1177,7 @@ ul{
         width: 97%;
         max-width: 320px;
         min-width: 180px;
-        height: 280px;
+        height: 320px;
         text-align: center;
         padding: 20px;
     }

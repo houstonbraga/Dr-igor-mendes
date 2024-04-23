@@ -9,20 +9,19 @@
     --negro:#000;
     --gris: #17181C;
     --blanco: #fff;
-    --ouro: #dba125d2;
+    --ouro: #dba125;
     --marrom: #655a42c5;
     --marromC: #D9B581;
     --cinza: #17181C;
 }
 
 button {
-    --green: #B88923;
+    
     font-size: 15px;
     font-family: 'Poppins';
-    padding: 0.7em 2.7em;
-    letter-spacing: 0.06em;
+    width: 150px;
+    height: 40px;
     position: relative;
-    font-family: inherit;
     border-radius: 8px;
     overflow: hidden;
     transition: all 0.3s;
@@ -31,10 +30,11 @@ button {
     background: transparent;
     color: white;
     cursor: pointer;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.671);
   }
   
   button:hover {
-    color: white;
+    color: #B88923;
     box-shadow: inset 0 0 10px white, 0.6, 0 0 9px 3px #B88923;
   }
   
@@ -77,11 +77,10 @@ header{
     width: 100%;
     height: 550px;
     background-image: url(img/pexels-andrea-piacquadio-3779697.jpg);
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: cover!important;
     position: relative;
-    overflow: hidden;
     color: #fff;
     text-align: center;
 }
@@ -127,7 +126,7 @@ header{
 }
 
 .enlaces a:hover{
-    color: #655A42;
+    color: #74716d;
     transform: translateY(-10%);
 }
 
@@ -145,7 +144,7 @@ header{
 
 /*============ HEADER-BANNER =============*/
 header .contenedor_banner{
-    margin-top: 120px;
+    margin-top: 160px;
     z-index: 1;
     /* animation: movedown 1.2s linear 1;
     animation-delay: 2s;
@@ -254,6 +253,31 @@ header .contenedor_banner{
     height: 16px!important;
 }
 
+.btn-saibamais {
+    border: 1px solid var(--blanco);
+    width: 120px;
+    height: 35px;
+    position: absolute;
+    bottom: 30px;
+    left: 90px;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.671);
+}
+
+.btn-saibamais:hover {
+    border: 1px solid var(--ouro);
+}
+
+.btn-padrao {
+    border: 1px solid white;
+    font-size: 16px;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.671);
+}
+
+.btn-padrao:hover {
+    border: 1px solid var(--ouro);
+    color: var(--ouro);
+}
+
 .servicios__cards{
     width: 100%;
     margin: auto;
@@ -266,7 +290,7 @@ header .contenedor_banner{
 
 .cards{
     margin: 20px 0 ;
-    width: 30%;
+    width: 32%;
     height: 350px;
     text-align: center;
     padding: 20px;
@@ -279,6 +303,7 @@ header .contenedor_banner{
     color: var(--blanco);
     transition: all .5s ease;
     z-index: 1;
+    position: relative;
 }
 
 .cards:hover{
@@ -304,10 +329,10 @@ header .contenedor_banner{
     font-weight: 700;
 }
 
-.cards__info {
+ ul {
     font-size: 15px;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .cards-info li{
@@ -315,6 +340,7 @@ header .contenedor_banner{
     flex-direction: row;
     align-items: center;
     text-align: center;
+    gap: 10px;
 }
 
 /*============ SERVICIOS-WAVE =============*/
@@ -442,6 +468,7 @@ header .contenedor_banner{
     text-align: center;
     width: 360px;
     height: 400px;
+    filter: drop-shadow(3px 5px 20px rgba(0, 0, 0, 0.758));
 }
 
 .drmario__picture {
@@ -536,6 +563,7 @@ header .contenedor_banner{
     width: 100%;
     height: 400px;
     margin-bottom: 60px;
+    filter: drop-shadow(3px 5px 20px rgba(0, 0, 0, 0.758));
 }
 
 .somos__picture {
@@ -635,10 +663,10 @@ header .contenedor_banner{
 
 /*================================== CONTACTANOS ========================================*/
 .contactanos{
-    background-color: var(--azulo);
+    background-color: ;
     height: 500px;
     background-image: url(img/fundo\ contatos.jpg);
-    
+    back
     /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
@@ -674,19 +702,23 @@ header .contenedor_banner{
 }
 
 .cards__contac{
-    margin: 20px 0 ;
-    width: 20%;
+    margin: 20px 0;
+    width: 230px;
     height: 230px;
     text-align: center;
     padding: 20px;
-    background-color: var(--cinza);
+    background-color: transparent;
     box-shadow: -5px 19px 18px 1pxx rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: -5px 19px 18px 1px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: -5px 19px 18px 1px rgba(0, 0, 0, 0.5);
-    border-radius: 1.5rem;
+    border-radius: 50%;
     color: var(--blanco);
     transition: all .5s ease;
-    border: 4px solid var(--blanco);
+    border: 2px solid var(--ouro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -771,7 +803,7 @@ header .contenedor_banner{
     width: 25px;
     height: 25px;
     background-color: var(--azulc);
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     line-height: 25px;
     border-radius: 50%;
@@ -803,7 +835,7 @@ header .contenedor_banner{
 
 /*================================== FOOTER ========================================*/
 .footer{
-    background-color: var(--azulo);
+    background-color: var(--ouro);
     padding: 20px 0;
 }
 
@@ -1135,7 +1167,7 @@ ul{
 
     .cards__contac{
         margin: 30px 20px;
-        width: 35%;
+        width: 200px;
         height: 200px;
         text-align: center;
         padding: 20px;
@@ -1144,9 +1176,9 @@ ul{
 }
 
 @media screen and (max-width:830px){
-    .cards img{
-        width: 70px;
-        height: 70px;
+    .cards .card-img{
+        width: 60px!important;
+        height: 60px!important;
     }
 }
 
@@ -1159,31 +1191,28 @@ ul{
 
 @media  screen and (max-width: 660px){
 
-    header{
-        background-attachment: fixed;
-    }
 
     /*================================ SERVICIOS ====================================*/
     .servicios{
-        height: 1400px;
+        height: 1600px;
     }
 
     .servicios__contenedor{
-        width:70%
+        width:85%
     }
 
     .cards{
         margin: 30px 15px;
-        width: 97%;
-        max-width: 320px;
+        width: 98%;
+        max-width: 350px;
         min-width: 180px;
-        height: 320px;
+        height: 380px;
         text-align: center;
         padding: 20px;
     }
     .cards img{
-        width: 90px;
-        height: 90px;
+        width: 60px;
+        height: 60px;
     }
 
      /*================== SERVICES MODAL =====================*/
@@ -1301,17 +1330,17 @@ ul{
         }
 
         .contactanos{
-            height: 1320px;
+            height: 1120px;
         }
 
         .contactanos__contenedor{
-            width: 70%;
+            width: 100%;
         }
 
         .cards__contac{
             margin: 30px 0 ;
-            width: 70%;
-            min-width: 180px;
+            width: 220;
+            min-width: 220px;
             height: 220px;
             text-align: center;
             padding: 20px;
@@ -1333,7 +1362,7 @@ ul{
          /*================================ FOOTER ====================================*/
 
          .footer{
-            background-color: var(--azulo);
+            background-color: var(--ouro);
             padding: 20px 0;
             height: 740px;
          }
@@ -1414,7 +1443,7 @@ ul{
 
     .enlaces{
         position: fixed;
-        background-color: #655a42c5;
+        background-color: #17181cb4;
         right: 0;
         top: 70px;
         width: 50%;

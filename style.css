@@ -257,9 +257,8 @@ header .contenedor_banner{
     border: 1px solid var(--blanco);
     width: 120px;
     height: 35px;
-    position: absolute;
-    bottom: 30px;
-    left: 90px;
+    
+    
     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.671);
 }
 
@@ -295,23 +294,19 @@ header .contenedor_banner{
     text-align: center;
     padding: 20px;
     background-color: transparent;
-    box-shadow: -2px 19px 18px 1px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: -2px 19px 18px 1px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: -2px 19px 18px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 19px 10px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 19px 10px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 19px 10px 1px rgba(0, 0, 0, 0.5);
     border-radius: 1.5rem;
     border: 1px solid var(--ouro);
     color: var(--blanco);
-    transition: all .5s ease;
     z-index: 1;
-    position: relative;
-}
-
-.cards:hover{
-    box-shadow: -5px 19px 40px 11px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: -5px 19px 40px 11px  rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: -5px 19px 40px 11px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     cursor: pointer;
-    transform: translateY(-5%);
 }
 
 .cards:hover .cards__tittle{
@@ -332,7 +327,10 @@ header .contenedor_banner{
  ul {
     font-size: 15px;
     font-weight: 300;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 10px;
 }
 
 .cards-info li{
@@ -354,94 +352,7 @@ header .contenedor_banner{
 }
 
 
-/*============ SERVICIOS-MODAL =============*/
-.servicios__modal-container{
-    opacity: 0;
-    visibility: hidden; /*esconder modal*/
-    position: fixed;
-    background-color:#655a42c4;
-    width: 100%;
-    height: 100vh;
-    top:0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-}
 
-.servicios__modal{
-    background-color: #fff;
-    width: 70%;
-    height: 70%;
-    max-width: 600px;
-    text-align: center;
-    border-radius: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    position: relative;
-    transition: transform .5s;
-    transform: translateY(0%); /*aparecer modal*/
-    z-index: 3;
-}
-
-.modal-close{
-    transform: translateY(-150%); /*esconder modal*/
-}
-
-.close{
-    position: absolute;
-    top:15px;
-    right: 15px;
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-color: #17181C;
-    color: #fff;
-    cursor: pointer;
-    line-height: 25px;
-    border-radius: 50%;
-    font-weight: 700;
-    z-index: 4;
-    transition: .5s;
-}
-
-
-
-.modal__img{
-    display: block;
-    height: 50%;
-    animation: scale 1s 2s backwards;
-}
-
-.modal__parrafo{
-    line-height: 1.5;
-    margin: 1em 2em;
-}
-
-.modal__titulo{
-    color: #17181C;
-}
-
-/* .modal__img{
-    height: 50%;
-    animation: scale 1s 2s backwards;
-    transform: scale(0);
-} */
-
-/* .open{
-    transform: scale(1);
-} */
-
-@keyframes scale {
-    0%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
 
 
 /*================================== DE.MARIO ========================================*/
@@ -469,11 +380,51 @@ header .contenedor_banner{
     width: 360px;
     height: 400px;
     filter: drop-shadow(3px 5px 20px rgba(0, 0, 0, 0.758));
+    position: relative;
+    z-index: 1;
+}
+
+.drmario__img::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 8px solid var(--ouro);
+    opacity: 0.9;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+.drmario__img::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 6px solid var(--azulo);
+    opacity: 0.9;
+    position: absolute;
+    top: 300px;
+    left: 30px;
+}
+
+.drmario__picture::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 8px solid var(--marromC);
+    opacity: 0.9;
+    position: absolute;
+    z-index: 1;
 }
 
 .drmario__picture {
     width: 100%;
-    
+    z-index: 1;
 }
 
 /*============ DE.MARIO-TEXT =============*/
@@ -666,7 +617,6 @@ header .contenedor_banner{
     background-color: ;
     height: 500px;
     background-image: url(img/fundo\ contatos.jpg);
-    back
     /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
@@ -1091,8 +1041,7 @@ ul{
 
     .drmario__img{
         text-align: center;
-        width: 100%;
-        height: 300px;
+        
     }
 
     .drmario__textos{
@@ -1127,8 +1076,7 @@ ul{
 
     .somos__img{
         text-align: center;
-        width: 100%;
-        height: 300px;
+        
     }
 
     .somos__textos{
@@ -1409,6 +1357,16 @@ ul{
         width: 320px;
     }
 
+    .drmario__img::after{
+        position: absolute;
+        right: -10px;
+    }
+
+    .drmario__img::before{
+        position: absolute;
+        top: 250px;
+    }
+
     .drmario__picture{
         width: 320px;
     }
@@ -1425,6 +1383,7 @@ ul{
     .somos__info-name{
         font-size: 12px;
     }
+
 
 
 }

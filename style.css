@@ -26,7 +26,7 @@ button {
     overflow: hidden;
     transition: all 0.3s;
     line-height: 1.4em;
-    border: 1px solid #B88923;
+    border: 1px solid var(--blanco);
     background: transparent;
     color: white;
     cursor: pointer;
@@ -36,6 +36,7 @@ button {
   button:hover {
     color: #B88923;
     box-shadow: inset 0 0 10px white, 0.6, 0 0 9px 3px #B88923;
+    border: 1px solid #B88923;
   }
   
   button:before {
@@ -515,6 +516,34 @@ header .contenedor_banner{
     height: 400px;
     margin-bottom: 60px;
     filter: drop-shadow(3px 5px 20px rgba(0, 0, 0, 0.758));
+    position: relative;
+}
+
+.somos__img::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 8px solid var(--azulo);
+    opacity: 0.9;
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    z-index: 1;
+}
+
+.somos__img::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 6px solid var(--ouro);
+    opacity: 0.9;
+    position: absolute;
+    top: 250px;
+    z-index: 1;
 }
 
 .somos__picture {
@@ -612,9 +641,11 @@ header .contenedor_banner{
 }
 
 
+
+
 /*================================== CONTACTANOS ========================================*/
 .contactanos{
-    background-color: ;
+    background-color: transparent;
     height: 500px;
     background-image: url(img/fundo\ contatos.jpg);
     /* background-attachment: fixed; */
@@ -1079,6 +1110,10 @@ ul{
         
     }
 
+    .somos__img::after {
+        right: 250px;
+    }
+
     .somos__textos{
        width: 70%;
        order: 1;
@@ -1119,6 +1154,11 @@ ul{
         height: 200px;
         text-align: center;
         padding: 20px;
+    }
+
+    .somos__img::after {
+        position: absolute;
+        right: 220px;
     }
 
 }
@@ -1202,7 +1242,8 @@ ul{
     /*================================ SOMOS ====================================*/
 
     .somos{
-        height: 720px;
+        height: 820px;
+        margin-top: 100px;
     }
 
     .somos__contenedor{
@@ -1219,6 +1260,12 @@ ul{
         width: 100%;
         height: 260px;
     }
+
+    .somos__img::after {
+        position: absolute;
+        right: 120px;
+    }
+    
 
     .somos__textos{
        width: 70%;
@@ -1355,6 +1402,7 @@ ul{
 
     .drmario__img{
         width: 320px;
+        height: 300px;
     }
 
     .drmario__img::after{
@@ -1384,6 +1432,10 @@ ul{
         font-size: 12px;
     }
 
+    .somos__img::after {
+        position: absolute;
+        
+    }
 
 
 }

@@ -1111,7 +1111,7 @@ ul{
     }
 
     .somos__img::after {
-        right: 250px;
+        right: 0px!important;
     }
 
     .somos__textos{

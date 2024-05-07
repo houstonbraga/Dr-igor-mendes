@@ -15,6 +15,15 @@
     --cinza: #17181C;
 }
 
+.whats-link {
+    position: fixed;
+    z-index: 3;
+    opacity: 0.7;
+    bottom: 0;
+    right: 10px;
+
+}
+
 button {
     
     font-size: 15px;
@@ -67,6 +76,7 @@ button {
 
 body {
     background-color: #17181C;
+    position: relative;
 }
 
 html{
@@ -425,6 +435,7 @@ header .contenedor_banner{
 .drmario__picture {
     width: 100%;
     z-index: 1;
+    border-radius: 50%;
 }
 
 /*============ DE.MARIO-TEXT =============*/
@@ -637,6 +648,58 @@ header .contenedor_banner{
 
 .cards__consultas {
     filter: blur(1000);
+}
+
+/*galeria*/
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.galeria h1 {
+    font-size: 44px;
+    font-family: "Poppins";
+    color: white;
+    margin-bottom: 50px;
+}
+
+.grupo-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.grupo-grid img {
+    width: 340px;
+    height: 340px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.493);
+    filter: grayscale(0.5);
+}
+
+/*triangulo*/
+
+.triangulo {
+    margin-top: 50px;
+    display: flex;
+}
+
+.triangulo > div{
+    width: 40px;
+    height: 40px;
+    border-top: 40px solid var(--azulc);
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    position: absolute;
+    left: 47%;
+    
 }
 
 
@@ -1177,7 +1240,10 @@ ul{
 }
 
 @media  screen and (max-width: 660px){
-
+    .triangulo > div {
+        position: absolute;
+        left: 45%;
+    }
 
     /*================================ SERVICIOS ====================================*/
     .servicios{
@@ -1210,7 +1276,7 @@ ul{
 
     /*================================ DR.MARIO ====================================*/
     .drmario{
-        height: 820px;
+        height: 720px!important;
     }
 
     .drmario__tittle{
@@ -1390,6 +1456,13 @@ ul{
         }
 
 
+}
+
+@media screen and (max-width: 460px) {
+    .triangulo > div {
+        position: absolute;
+        left: 43%;
+    }
 }
 
 @media  screen and (max-width: 400px){

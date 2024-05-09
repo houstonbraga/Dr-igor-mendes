@@ -408,7 +408,6 @@ header .contenedor_banner{
     text-align: center;
     width: 360px;
     height: 400px;
-    filter: drop-shadow(3px 5px 20px rgba(0, 0, 0, 0.758));
     position: relative;
     z-index: 1;
 }
@@ -439,17 +438,6 @@ header .contenedor_banner{
     left: 30px;
 }
 
-.drmario__picture::after {
-    content: "";
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 8px solid var(--marromC);
-    opacity: 0.9;
-    position: absolute;
-    z-index: 1;
-}
 
 .drmario__picture {
     width: 100%;
@@ -684,6 +672,7 @@ header .contenedor_banner{
     font-family: "PoppinsMedium";
     color: white;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .grupo-grid {
@@ -1299,7 +1288,7 @@ ul{
 
     /*================================ DR.MARIO ====================================*/
     .drmario{
-        height: 720px!important;
+        height: 820px!important;
     }
 
     .drmario__tittle{

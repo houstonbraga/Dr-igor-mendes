@@ -609,11 +609,15 @@ header .contenedor_banner{
     display: block;
     text-align: center;
     color: var(--azulo);
+    
 }
 
 .somos__info-title{
     font-weight: 700;
     font-size: 30px;
+    font-size: 'PoppinsMedium';
+    font-weight: 600;
+
 }
 
 .somos__info-contenedor{
@@ -622,6 +626,8 @@ header .contenedor_banner{
 
 .somos__info-name{
     font-size: 15px;
+    font-size: 'PoppinsMedium';
+    font-weight: 600;
 }
 
 .somos__cta{
@@ -665,6 +671,7 @@ header .contenedor_banner{
     justify-content: center;
     align-items: center;
     padding: 0 100px;
+    margin-top: 50px;
 }
 
 .galeria h1 {
@@ -673,6 +680,7 @@ header .contenedor_banner{
     color: white;
     margin-bottom: 50px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .grupo-grid {
@@ -997,13 +1005,15 @@ ul{
 }
 
 .footer__redes a:hover{
-    background-color: var(--gris);
+    background-color: var(--marrom);
 }
 
 .footer__redes img{
     width: 30px;
     height: 30px;
 }
+
+
 
 .footer__line{
     width: 75%;
